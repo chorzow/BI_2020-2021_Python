@@ -1,5 +1,5 @@
 a, operation, b = float(input()), input(), float(input())
-if (operation == '/' or operation == 'mod' or operation == 'div') and b == 0:
+if (operation == '/' or operation == '%' or operation == '//') and b == 0:
     output = "Division by zero!"
 elif operation == '+':
     output = a + b
@@ -9,11 +9,11 @@ elif operation == '/':
     output = a / b
 elif operation == '*':
     output = a * b
-elif operation == 'mod':
+elif operation == '%':
     output = a % b
-elif operation == 'pow':
+elif operation == '**':
     output = a ** b
-elif operation == 'div':
+elif operation == '//':
     output = a // b
 else:
     output = "Undefined operation!"
