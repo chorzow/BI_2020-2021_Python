@@ -1,20 +1,20 @@
-a, operation, b = float(input()), input(), float(input())
-if (operation == '/' or operation == '%' or operation == '//') and b == 0:
+num1, operation, num2 = float(input("Enter a number: ")), input("Enter an operand: "), float(input("Enter a number: "))
+if (operation == '/' or operation == '%' or operation == '//') and num2 == 0:
     output = "Division by zero!"
 elif operation == '+':
-    output = a + b
+    output = num1 + num2
 elif operation == '-':
-    output = a - b
+    output = num1 - num2
 elif operation == '/':
-    output = a / b
+    output = num1 / num2
 elif operation == '*':
-    output = a * b
+    output = num1 * num2
 elif operation == '%':
-    output = a % b
+    output = num1 % num2
 elif operation == '**':
-    output = a ** b
+    output = num1 ** num2
 elif operation == '//':
-    output = a // b
+    output = num1 // num2
 else:
-    output = "Undefined operation!"
+    output = "Undefined operand!"
 print(output)
