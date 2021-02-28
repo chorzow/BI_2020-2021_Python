@@ -10,4 +10,4 @@ def generate(k):
         i += 1
     return chain(*ans)
 
-print(list(generate(3)))
+# Example: print(list(generate(3)))
